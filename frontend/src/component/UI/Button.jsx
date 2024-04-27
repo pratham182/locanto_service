@@ -1,6 +1,6 @@
 const Button=({onClick, buttonClasses, buttonTitle,style})=>{
     return(
-    <button type="submit" style={style}>
+    <button className={buttonClasses} type="submit" style={style}>
         {buttonTitle}
     </button>)
 }

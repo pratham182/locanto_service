@@ -4,6 +4,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 import Input from "../UI/Input";
 import Button from "../UI/Button";
+import state from "../../constants/City.json"
 
 const Index=()=>{
     const [show,setShow]=useState(false);
@@ -41,8 +42,8 @@ const Index=()=>{
         {show && (
             <>
 
-                <Input style={input_style}/>
-                <Input style={input_style}/>
+                <Input placeholder="Location" style={input_style}/>
+                <Input placeholder="All category" style={input_style}/>
 
                 <Button buttonTitle="Go" style={button_style}/>
                 <FontAwesomeIcon style={{cursor:"pointer"}} onClick={()=>{
@@ -51,6 +52,9 @@ const Index=()=>{
                 <FontAwesomeIcon icon="fa-thin fa-timer" />
             </>
         )}
+
+
+        
 
         </div>
      )
