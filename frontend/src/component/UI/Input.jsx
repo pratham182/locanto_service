@@ -1,16 +1,14 @@
 import Select from 'react-select'
 
-const Input=({value, type, onChange,className, placeholder, name,onClick,style})=>{
+const Input=({value, type, onChange,className, placeholder, name,onClick})=>{
     
 const options = [
-   { value: 'chocolate', label: 'Chocolate' },
-   { value: 'strawberry', label: 'Strawberry' },
-   { value: 'vanilla', label: 'Vanilla' }
+   
  ]
      return(
       type=="dropdown" ?( <Select className={className} options={options} />):
         
-        (<input value={value} onClick={onClick} placeholder={placeholder} style={style}/>)
+        (<input  value={value} onClick={onClick} placeholder={placeholder} className={className} onChange={onChange}/>)
      )
 }
 
