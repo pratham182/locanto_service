@@ -12,7 +12,7 @@ const SignIn=()=>{
   })
 
 
-  const inputChangeHandler = ((e) => {
+  const inputChangeHandler = React.useCallback((e) => {
     const { name, value } = e.target;
    console.log(name,value)
     setInputData(prevData => ({

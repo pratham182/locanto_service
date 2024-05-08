@@ -28,7 +28,7 @@ const Header=()=>{
                 <Button buttonTitle={<FontAwesomeIcon className="text-white" icon={faBell} />}/>
                 <Button buttonTitle={ <FontAwesomeIcon className="text-white" icon={faExpand} />}  />
 
-                <img className="rounded-[50%] w-8 h-8" src="https://laravelui.spruko.com/tailwind/ynex/build/assets/images/faces/9.jpg"/>
+                <img className="rounded-[50%] w-8 h-8" src="https://laravelui.spruko.com/tailwind/ynex/build/assets/images/faces/9.jpg" alt="User Profile"/>
                 <div>Pratham</div>
                 </>):( <>
                 <Button buttonTitle="Login" buttonClasses="text-white text-l" />
@@ -47,3 +47,7 @@ const Header=()=>{
 }
 
 export default Header;
+
+
+
+

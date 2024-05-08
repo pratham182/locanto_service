@@ -9,7 +9,7 @@ import state from "../../constants/City.json"
 const Index=()=>{
     const [show,setShow]=useState(false);
     const handle=()=>{
-        console.log("Helo")
+        
         setShow(true);
         
     
@@ -37,26 +37,7 @@ const Index=()=>{
 
    
      return(
-        <div style={{display:"flex",alignItems: "center",justifyContent:"center",flexDirection:"column",gap:"10px"}}>
-        <Input onClick={handle} placeholder="I'm looking for " style={input_style} />
-        {show && (
-            <>
-
-                <Input placeholder="Location" style={input_style}/>
-                <Input placeholder="All category" style={input_style}/>
-
-                <Button buttonTitle="Go" style={button_style}/>
-                <FontAwesomeIcon style={{cursor:"pointer"}} onClick={()=>{
-                    setShow(false)
-                }} icon={faArrowUp} />
-                <FontAwesomeIcon icon="fa-thin fa-timer" />
-            </>
-        )}
-
-
-        
-
-        </div>
+       <h1></h1>
      )
 }
 
