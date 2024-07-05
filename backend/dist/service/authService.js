@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { PrismaClient } from '@prisma/client';
-import { hashPassword } from "../utils/authUtil";
+import { comparePassword, hashPassword } from "../utils/authUtil.js";
 const prisma = new PrismaClient();
 export const registerService = (registerData) => __awaiter(void 0, void 0, void 0, function* () {
     let { email, username, password } = registerData;
@@ -21,4 +21,25 @@ export const registerService = (registerData) => __awaiter(void 0, void 0, void 
         },
     });
     return newuser;
+});
+export const loginService = (loginData) => __awaiter(void 0, void 0, void 0, function* () {
+    const { email, password } = loginData;
+    const loginUser = yield prisma.user.findFirst({
+        where: {
+            email
+        }
+    });
+    //if found
+    if (!loginUser) {
+        return "No user found";
+    }
+    //check password 
+    const comparePasswordStatus = comparePassword(loginUser.password, password);
+    if (!comparePasswordStatus) {
+        return "Check your password";
+    }
+    else {
+        console.log(loginUser);
+        return loginUser;
+    }
 });

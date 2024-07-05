@@ -1,6 +1,6 @@
-import { CreateUserDTO, User } from "../model/user";
+import { CreateUserDTO, LoginUser, User } from "../model/user";
 import { PrismaClient } from '@prisma/client';
-import { hashPassword } from "../utils/authUtil";
+import {   comparePassword, hashPassword } from "../utils/authUtil";
 
 const prisma = new PrismaClient();
 
@@ -23,4 +23,36 @@ export const registerService=async(registerData:CreateUserDTO): Promise<User>=>{
         return newuser;
       
       
+}
+
+
+
+export const loginService=async(loginData:LoginUser)=>{
+  const {email,password}=loginData;
+  const loginUser:LoginUser | null=await prisma.user.findFirst({
+    where:{
+       email
+    }
+  });
+
+  
+
+  //if found
+
+  if(!loginUser){
+    return "No user found";
+  }
+
+  //check password 
+  const comparePasswordStatus:boolean=comparePassword(loginUser.password,password);
+   if(!comparePasswordStatus){
+    return "Check your password";
+   }else{
+      console.log(loginUser);
+         return loginUser;
+
+   }
+
+
+
 }
