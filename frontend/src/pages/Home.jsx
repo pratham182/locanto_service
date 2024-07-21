@@ -44,10 +44,28 @@ const Home=()=>{
 </div>
         </div>
         {/* <Items/> */}
-        <div class="ml-2 mt-4">
-        <Card/>
+        <div class="ml-2 mt-4 flex flex-wrap gap-4 justify-evenly">
+        <Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/house.png" product="Real Estate" ads="8 Ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/car.png" product="vehicle" ads="9 Ads"/>
 
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/mobile.png" product="mobile" ads="100 Ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/furniture.png" product="furniture" ads="44 ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/Travel.png" product="Travel" ads="10ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/pet.png" product="Animal" ads="10 Ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/jobs2.png" product="Jobs" ads="10 Ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/Matrimonial.png" product="Matrimonail" ads="10 Ads"/>
+<Card image="	https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/Health2.png" product="Health" ads="10 Ads"/>
+<Card image="https://classiads.designinvento.net/elementor/classiads-ultra/wp-content/uploads/2020/12/Events.png" product="Event" ads="10 Ads"/>
         </div>
+
+
+<div>
+<div>
+    <h4> Featured Ads
+    </h4>
+</div>
+
+</div>
         
         
         </>
