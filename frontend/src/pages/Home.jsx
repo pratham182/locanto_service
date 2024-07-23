@@ -3,6 +3,7 @@ import Header from "../component/Header";
 import SearchItem from "../component/SearchItem";
 import Items from "../component/Items";
 import { Card } from "../component/Card";
+import { ProductCard } from "../component/ProductCard";
 
 
 const Home=()=>{
@@ -59,10 +60,17 @@ const Home=()=>{
         </div>
 
 
-<div>
-<div>
-    <h4> Featured Ads
+<div class="mt-20 bg-background-white" >
+<div class=" flex flex-col justify-center items-center gap-2 ">
+    <h4 class="text-custom-black font-bold text-4xl "> Featured Ads
     </h4>
+
+    <h4 class="text-custom-grey text-l">Buy & Sell Anything
+
+</h4>
+
+
+<ProductCard/>
 </div>
 
 </div>
