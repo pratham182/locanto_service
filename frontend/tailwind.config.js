@@ -13,7 +13,8 @@ export default {
       'background-white':'#F7F7F7',
       'custom-black':'#191A1F',
       'custom-grey':'#777777',
-      'custom-orange':'#EA5D49'
+      'custom-orange':'#EA5D49',
+      'text-black':'#333333'
     }
   },
   },

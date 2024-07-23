@@ -6,6 +6,10 @@ import { Card } from "../component/Card";
 import { ProductCard } from "../component/ProductCard";
 
 
+
+
+
+
 const Home=()=>{
     const divStyle={
         backgroundImage: "url('https://cdn.pixabay.com/photo/2015/11/15/21/31/lego-1044891_1280.jpg')", /* Replace with your own image URL */
@@ -69,13 +73,31 @@ const Home=()=>{
 
 </h4>
 
+<div class=" carousel flex gap-10 overflow-x-scroll whitespace-nowrap max-w-5xl " style={{}}>
 
 <ProductCard/>
+<ProductCard/><ProductCard/>
+<ProductCard/>
+<ProductCard/><ProductCard/>
+<ProductCard/>
+<ProductCard/><ProductCard/>
+<ProductCard/>
+<ProductCard/><ProductCard/>
+
+
+</div>
+
 </div>
 
 </div>
         
         
+
+
+
+
+
+
         </>
     )
 }
