@@ -4,7 +4,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 import Input from "../UI/Input";
 import Button from "../UI/Button";
-import state from "../../constants/City.json"
+// import state from "../../constants/City.json"
 
 const Index=()=>{
     const [show,setShow]=useState(false);
