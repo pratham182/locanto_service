@@ -10,11 +10,12 @@ export default {
     },
     colors: {
       'custom-red': '#f7425b',
-      'background-white':'#F7F7F7',
+      'background-white':'#F3F3F3',
       'custom-black':'#191A1F',
       'custom-grey':'#777777',
       'custom-orange':'#EA5D49',
       'text-black':'#333333'
+    
     }
   },
   },
